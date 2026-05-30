@@ -67,33 +67,6 @@ backToTop.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// ===== Contact Form =====
-const contactForm = document.getElementById('contactForm');
-
-contactForm.addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    // Simple toast notification
-    const toast = document.createElement('div');
-    toast.className = 'toast';
-    toast.textContent = '✓ 提交成功！我们将在1个工作日内与您联系。';
-    document.body.appendChild(toast);
-
-    // Trigger reflow for animation
-    requestAnimationFrame(() => {
-        toast.classList.add('show');
-    });
-
-    // Remove toast after 4s
-    setTimeout(() => {
-        toast.classList.remove('show');
-        setTimeout(() => toast.remove(), 400);
-    }, 4000);
-
-    // Reset form
-    this.reset();
-});
-
 // ===== Scroll Reveal Animation =====
 const observerOptions = {
     threshold: 0.15,

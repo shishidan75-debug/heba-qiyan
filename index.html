@@ -287,21 +287,24 @@
                         </div>
                     </div>
                 </div>
-                <form class="contact-form" id="contactForm">
+                <form class="contact-form" id="contactForm" action="https://formsubmit.co/15869568089@139.com" method="POST">
+                    <input type="hidden" name="_captcha" value="true">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_next" value="https://shishidan75-debug.github.io/heba-qiyan/thanks.html">
                     <div class="form-group">
-                        <input type="text" placeholder="您的姓名 *" required>
+                        <input type="text" name="姓名" placeholder="您的姓名 *" required>
                     </div>
                     <div class="form-group">
-                        <input type="tel" placeholder="联系电话 *" required>
+                        <input type="tel" name="电话" placeholder="联系电话 *" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="电子邮箱">
+                        <input type="email" name="邮箱" placeholder="电子邮箱">
                     </div>
                     <div class="form-group">
-                        <input type="text" placeholder="公司名称 *" required>
+                        <input type="text" name="公司名称" placeholder="公司名称 *" required>
                     </div>
                     <div class="form-group">
-                        <select required>
+                        <select name="感兴趣的服务" required>
                             <option value="">感兴趣的服务 *</option>
                             <option value="iso9001">ISO 9001 质量管理体系</option>
                             <option value="iatf16949">IATF 16949 汽车行业质量管理</option>
@@ -309,7 +312,7 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="留言备注（可选）" rows="4"></textarea>
+                        <textarea name="留言备注" placeholder="留言备注（可选）" rows="4"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary btn-submit">提交咨询</button>
                 </form>
