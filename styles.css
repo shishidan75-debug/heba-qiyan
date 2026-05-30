@@ -220,20 +220,6 @@ img {
     max-width: 800px;
 }
 
-.hero-badge {
-    display: inline-block;
-    padding: 6px 20px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    color: #fff;
-    font-size: 13px;
-    font-weight: 500;
-    border-radius: 24px;
-    margin-bottom: 24px;
-    letter-spacing: 1px;
-}
-
 .hero-title {
     font-size: 52px;
     font-weight: 900;
@@ -262,33 +248,6 @@ img {
     gap: 16px;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 48px;
-}
-
-.hero-stats-row {
-    display: flex;
-    justify-content: center;
-    gap: 48px;
-    padding-top: 32px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.hero-stat {
-    text-align: center;
-}
-
-.hero-stat-num {
-    display: block;
-    font-size: 28px;
-    font-weight: 800;
-    color: #fff;
-    line-height: 1.2;
-}
-
-.hero-stat-label {
-    font-size: 13px;
-    color: rgba(255, 255, 255, 0.55);
-    margin-top: 4px;
 }
 
 .btn {
@@ -590,134 +549,6 @@ img {
     box-shadow: 0 4px 15px rgba(0, 82, 164, 0.08);
 }
 
-/* ===== Testimonials ===== */
-.testimonials {
-    background: #fff;
-}
-
-.testimonial-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-}
-
-.testimonial-card {
-    background: #f8f9fc;
-    border-radius: 16px;
-    padding: 32px 28px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.testimonial-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
-}
-
-.testimonial-stars {
-    color: #f5a623;
-    font-size: 18px;
-    letter-spacing: 4px;
-    margin-bottom: 16px;
-}
-
-.testimonial-text {
-    font-size: 15px;
-    color: #444;
-    line-height: 1.8;
-    margin-bottom: 24px;
-    font-style: italic;
-}
-
-.testimonial-author {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.testimonial-avatar {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: #0052A4;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    font-weight: 600;
-    flex-shrink: 0;
-}
-
-.testimonial-author strong {
-    display: block;
-    font-size: 14px;
-    color: #1a1a2e;
-}
-
-.testimonial-author span {
-    font-size: 12px;
-    color: #999;
-}
-
-/* ===== WeChat QR ===== */
-.wechat-qr {
-    margin: 16px auto;
-    width: 140px;
-    height: 140px;
-    background: #fff;
-    border-radius: 8px;
-    padding: 6px;
-    border: 1px solid #eee;
-}
-
-.wechat-qr img {
-    width: 100%;
-    height: 100%;
-    display: block;
-}
-
-/* ===== Mobile Bottom Bar ===== */
-.mobile-bar {
-    display: none;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999;
-    background: #fff;
-    border-top: 1px solid #eee;
-    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
-}
-
-.mobile-bar-btn {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    padding: 14px 0;
-    font-size: 15px;
-    font-weight: 500;
-    text-decoration: none;
-    transition: background 0.2s;
-}
-
-.mobile-bar-call {
-    background: #0052A4;
-    color: #fff;
-    border-right: 1px solid rgba(255,255,255,0.1);
-}
-
-.mobile-bar-wechat {
-    color: #1a1a2e;
-    background: #fff;
-}
-
-.mobile-bar-call span,
-.mobile-bar-wechat span {
-    font-size: 20px;
-}
-
 /* ===== Contact ===== */
 .contact {
     background: linear-gradient(135deg, #f8f9fc 0%, #eef3f9 100%);
@@ -980,14 +811,6 @@ img {
     .hero-title {
         font-size: 38px;
     }
-
-    .hero-stats-row {
-        gap: 32px;
-    }
-
-    .testimonial-grid {
-        grid-template-columns: 1fr 1fr;
-    }
 }
 
 @media (max-width: 768px) {
@@ -1048,18 +871,6 @@ img {
         transform: rotate(-45deg) translate(5px, -5px);
     }
 
-    body {
-        padding-bottom: 64px;
-    }
-
-    .mobile-bar {
-        display: flex;
-    }
-
-    .back-to-top {
-        bottom: 80px;
-    }
-
     .hero-title {
         font-size: 30px;
     }
@@ -1068,20 +879,11 @@ img {
         font-size: 18px;
     }
 
-    .hero-stats-row {
-        gap: 24px;
-        flex-wrap: wrap;
-    }
-
     .services-grid {
         grid-template-columns: 1fr;
     }
 
     .why-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .testimonial-grid {
         grid-template-columns: 1fr;
     }
 
