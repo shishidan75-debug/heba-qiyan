@@ -67,6 +67,27 @@ backToTop.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
+// ===== Copy WeChat Number =====
+const copyBtn = document.getElementById('copyWechat');
+if (copyBtn) {
+    copyBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const text = '15869568089';
+        navigator.clipboard.writeText(text).then(() => {
+            const toast = document.createElement('div');
+            toast.className = 'toast';
+            toast.textContent = '已复制微信号：15869568089，快去添加吧';
+            toast.style.cssText = 'position:fixed;bottom:80px;left:50%;transform:translateX(-50%);background:#1a1a2e;color:#fff;padding:12px 24px;border-radius:8px;font-size:14px;z-index:9999;opacity:0;transition:opacity 0.3s;border:none;';
+            document.body.appendChild(toast);
+            requestAnimationFrame(() => toast.style.opacity = '1');
+            setTimeout(() => {
+                toast.style.opacity = '0';
+                setTimeout(() => toast.remove(), 300);
+            }, 2500);
+        });
+    });
+}
+
 // ===== Scroll Reveal Animation =====
 const observerOptions = {
     threshold: 0.15,
@@ -84,7 +105,7 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe elements
 document.querySelectorAll(
-    '.service-card, .why-card, .step, .about-grid, .contact-grid, .client-logos, .section-header'
+    '.service-card, .why-card, .step, .about-grid, .contact-grid, .client-logos, .section-header, .testimonial-card'
 ).forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';
